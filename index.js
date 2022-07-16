@@ -213,7 +213,7 @@ let pro3 = new Promise((resolve, reject) => {
 });
 Promise.all([pro1, pro2, pro3])
   .then((result) => {
-    console.log(result);
+    console.log(result); // it gives all resolves as an array ['first resolve', 'second resolve', 'third resolve']
   })
   .catch((error) => {
     console.log(error);
